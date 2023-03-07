@@ -7,7 +7,7 @@ import LogoIcon from "../icons/LogoIcon";
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="w-full bg-[#282C33] shadow">
+    <nav className="w-full bg-[#282C33]">
       <div className="mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl">
         <div>
           <div className="flex items-center justify-between py-3 md:block md:py-5">
@@ -21,7 +21,7 @@ const Header = () => {
             </Link>
             <div className="md:hidden">
               <button
-                className="rounded-md p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
+                className="rounded-md p-2 text-gray-700 outline-none"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <CloseIcon /> : <HumbergerIcon />}
@@ -39,7 +39,7 @@ const Header = () => {
               <li className="font-Fira ">
                 <Link href="#" className="flex flex-row items-center">
                   <p className="text-[#C778DD] hover:text-[#ABB2BF]">#</p>
-                  <p className="text-[#ABB2BF] hover:text-white">home</p>
+                  <p className="text-[#ABB2BF] hover:text-white">blog</p>
                 </Link>
               </li>
               <li className="font-Fira ">
