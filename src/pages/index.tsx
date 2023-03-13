@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   const styles = {
-    mainPage: `flex min-h-screen flex-col items-center bg-gradient-to-b from-[${String(
+    mainPage: `flex min-h-screen overflow-hidden flex-col items-center bg-gradient-to-b from-[${String(
       MAIN_COLORS.DARK_GREY
     )}] to-[${String(MAIN_COLORS.DARK_GREY)}]`,
     mainHeader: `font-Fira text-[${MAIN_COLORS.WHITE.toString()}] text-2xl`,
